@@ -1,0 +1,243 @@
+<html>
+  <head>
+    <title>CaseStudy!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+
+      <div class="col-xs-12 header_div">
+
+        <h2>CaseStudy<img src="search.gif"></h2>
+
+      </div>
+
+      <div class="col-sm-6 col-xs-12 main_div">
+
+          <label>Image name: Spectacles</label>
+          <img src="glasses.jpg" id="glass">
+          
+          <br>
+          <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">eyeglasses</label>
+          <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+          <br>
+          <br>
+          <div id="results" class="btn btn-primary">
+
+          <label>Result-</label>
+          <hr>
+          <label></label>
+
+          </div>
+      
+      </div>
+
+      <div class="col-sm-6 col-xs-12 main_div">
+
+        <label>Image name: Controller</label>
+        <img src="console.jpg" id="console">
+        
+        <br>
+        <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">joystick</label>
+        <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+        <br>
+        <br>
+        <div id="results" class="btn btn-primary">
+
+        <label>Result-</label>
+        <hr>
+        <label></label>
+
+        </div>
+    
+    </div>
+
+    <div class="col-sm-6 col-xs-12 main_div">
+
+      <label>Image name: Remote</label>
+      <img src="remote.jpg" id="remote">
+      
+      <br>
+      <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">ballpoint pen</label>
+      <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+      <br>
+      <br>
+      <div id="results" class="btn btn-primary">
+
+      <label>Result-</label>
+      <hr>
+      <label></label>
+
+      </div>
+  
+  </div>
+
+  <div class="col-sm-6 col-xs-12 main_div">
+
+    <label>Image name: Clip</label>
+    <img src="clip.jpg" id="clip">
+    
+    <br>
+    <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">pin</label>
+    <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+    <br>
+    <br>
+    <div id="results" class="btn btn-primary">
+
+    <label>Result-</label>
+    <hr>
+    <label></label>
+
+    </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Vape</label>
+  <img src="vape.jpg" id="vape">
+  
+  <br>
+  <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">pencil</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label></label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Rocket</label>
+  <img src="rocket.jpeg" id="rocket">
+  
+  <br>
+  <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">switch</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label></label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Orange</label>
+  <img src="orange.jpeg" id="orange">
+  
+  <br>
+  <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">citrons</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label></label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Bookmark</label>
+  <img src="bookmark.jpeg" id="book">
+  
+  <br>
+  <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">instrument</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label></label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Keys</label>
+  <img src="Keys.jpeg" id="keys">
+  
+  <br>
+  <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">fastener</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label></label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Sanitizer</label>
+  <img src="sanitezer.jpeg" id="sani">
+  
+  <br>
+  <label id="wolfram_label">Output on Wolfram Project: </label> <label id="wolfram_output">ethernet cable</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output"></label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label></label>
+
+  </div>
+
+</div>
+
+    </center>
+
+
+    
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
